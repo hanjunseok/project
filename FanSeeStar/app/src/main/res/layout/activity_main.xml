@@ -1,0 +1,79 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:orientation="vertical"
+    android:weightSum="2"
+    android:background="@drawable/tab_bg_selector"
+    tools:context=".MainActivity">
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="?attr/actionBarSize"
+        android:background="#ec79d1">
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:layout_weight="1"
+            android:drawableStart="@mipmap/board"
+            android:id="@+id/board"
+            />
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:textSize="20dp"
+            android:layout_marginTop="10dp"
+            android:layout_gravity="center"
+            android:layout_weight="1"
+            android:textColor="#FFFFFF"
+            android:id="@+id/homeGo"
+            android:text="Fan See Star"
+            />
+        <TextView
+            android:id="@+id/menu"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:layout_weight="1"
+            android:drawableRight="@mipmap/menu"/>
+    </LinearLayout>
+    <LinearLayout
+        android:id="@+id/ll"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent">
+        <Button
+            android:id="@+id/sm"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_weight="1"
+            android:textColor="@drawable/tab_color_selector"
+            android:background="@drawable/tab_bg_selector"
+            android:text="SM" />
+
+        <Button
+            android:id="@+id/jyp"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_weight="1"
+            android:textColor="@drawable/tab_color_selector"
+            android:background="@drawable/tab_bg_selector"
+            android:text="JYP" />
+
+        <Button
+            android:id="@+id/yg"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_weight="1"
+            android:textColor="@drawable/tab_color_selector"
+            android:background="@drawable/tab_bg_selector"
+            android:text="YG" />
+    </LinearLayout>
+    <android.support.v4.view.ViewPager
+        android:id="@+id/vp"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:layout_below="@+id/ll"
+        android:layout_weight="1"
+        android:background="@drawable/tab_bg_selector">
+    </android.support.v4.view.ViewPager>
+
+</LinearLayout>

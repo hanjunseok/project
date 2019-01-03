@@ -1,0 +1,70 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    tools:context=".MainActivity">
+
+
+    <TextView
+
+        android:layout_marginTop="60dp"
+        android:layout_width="200dp"
+        android:layout_height="200dp"
+        android:layout_gravity="center"
+        android:background="@drawable/loding"
+        android:gravity="center"
+        android:textSize="50dp"
+        />
+
+    <EditText
+        android:id="@+id/edtId"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:hint="아이디를 입력하시오"
+        android:textSize="20dp"
+        android:layout_marginTop="20dp"
+        android:gravity="center_vertical"
+        android:background="@drawable/round"
+        android:layout_gravity="center"
+        android:imeOptions="actionNext"
+        android:singleLine="true"
+        />
+
+    <EditText
+        android:id="@+id/edtpw"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:hint="비밀번호를 입력하시오"
+        android:password="true"
+        android:gravity="center_vertical"
+        android:background="@drawable/round"
+        android:textSize="20dp"
+        android:layout_gravity="center"
+        android:imeOptions="actionDone"
+        android:singleLine="true"
+        />
+
+    <Button
+        android:id="@+id/btnLogin"
+        android:layout_width="200dp"
+        android:layout_height="130dp"
+        android:layout_gravity="center"
+        android:background="@drawable/login"
+        android:backgroundTint="#000000"/>
+
+    <Button
+        android:id="@+id/btnLogin2"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_gravity="center"
+        android:background="@drawable/round"
+        android:text="비회원 접속"/>
+
+
+
+
+
+
+</LinearLayout>
